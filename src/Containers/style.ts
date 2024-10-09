@@ -20,6 +20,8 @@ export const Container = styled.div`
     h1{
         font-weight:bold;
         margin-top:15px;
+        text-align:center;
+        align-items:center;
     }
 
     p{
@@ -38,7 +40,7 @@ export const Container = styled.div`
         align-items:center;
         margin-top:20px;
         button{
-            background-color:blue;
+            background-color:#21387a;
             margin-top:20px;
             color:white;
             font-size:20px;
