@@ -1,9 +1,14 @@
+import { useState } from "react"
 import { Container } from "./style"
 
 function Pg() {
-    return (
-        <>
-            <Container>
+
+    const [modal ,setModal] = useState(1)
+
+    const pagina1 = () => {
+        if(modal === 1){
+            return(
+            <Container style={{display: 'flex'}}>
                 <div className="Titulo">
                     <h2>Pergunta 1</h2>
                 </div>
@@ -17,14 +22,16 @@ function Pg() {
                 </p>
 
                 <div className="ContainerButton">
-                    <button>Tenho minha casa própria</button>
-                    <button>Moro de aluguel</button>
-                    <button>Moro na casa dos meus pais</button>
+                    <button onClick={ModalAcrecent}>Tenho minha casa própria</button>
+                    <button onClick={ModalAcrecent}>Moro de aluguel</button>
+                    <button onClick={ModalAcrecent}>Moro na casa dos meus pais</button>
                 </div>
-
             </Container>
-
-            <Container>
+            );
+        }
+        if(modal === 2){
+            return(
+                <Container>
                 <div className="Titulo">
                     <h2>Pergunta 2</h2>
                 </div>
@@ -35,14 +42,17 @@ function Pg() {
                 </p>
 
                 <div className="ContainerButton">
-                    <button>Sim, financiamento da casa</button>
-                    <button>Sim, financiamento do carro / moto</button>
-                    <button>Sim, Cartão de credito (parcelas)</button>
+                    <button onClick={ModalAcrecent}>Sim, financiamento da casa</button>
+                    <button onClick={ModalAcrecent}>Sim, financiamento do carro / moto</button>
+                    <button onClick={ModalAcrecent}>Sim, Cartão de credito (parcelas)</button>
 
                 </div>
             </Container>
-
-            <Container>
+            )
+        }
+        if(modal === 3){
+            return(
+                <Container>
                 <div className="Titulo">
                     <h2>Pergunta 3</h2>
                 </div>
@@ -53,14 +63,17 @@ function Pg() {
                 </p>
 
                 <div className="ContainerButton">
-                    <button>Sou CLT</button>
-                    <button>Sou empresário</button>
-                    <button>Sou autônomo</button>
-                    <button className="endButton">Sou Desempregado</button>
+                    <button onClick={ModalAcrecent}>Sou CLT</button>
+                    <button onClick={ModalAcrecent}>Sou empresário</button>
+                    <button onClick={ModalAcrecent}>Sou autônomo</button>
+                    <button className="endButton" onClick={ModalAcrecent}>Sou Desempregado</button>
                 </div>
             </Container>
-
-            <Container>
+            )
+        }
+        if(modal === 4){
+            return(
+                <Container>
                 <div className="Titulo">
                     <h2>Pergunta 4</h2>
                 </div>
@@ -71,13 +84,16 @@ function Pg() {
                 </p>
 
                 <div className="ContainerButton">
-                    <button>Comprar algo daqui 1 ano (trocar de carro, viagem)</button>
-                    <button>Comprar algo entre 1 a 3 anos (dar entrada num imóvel, festa de casamento)</button>
-                    <button>Guarda por bastante tempo (aposentadoria e reservas)</button>
+                    <button onClick={ModalAcrecent}>Comprar algo daqui 1 ano (trocar de carro, viagem)</button>
+                    <button onClick={ModalAcrecent}>Comprar algo entre 1 a 3 anos (dar entrada num imóvel, festa de casamento)</button>
+                    <button onClick={ModalAcrecent}>Guarda por bastante tempo (aposentadoria e reservas)</button>
                 </div>
             </Container>
-
-            <Container>
+            )
+        }
+        if(modal === 5){
+            return(
+                <Container>
                 <div className="Titulo">
                     <h2>Pergunta 5</h2>
                 </div>
@@ -88,14 +104,16 @@ function Pg() {
                 </p>
 
                 <div className="ContainerButton">
-                    <button>Exelente oportunidade de ganhar mais dinheiro</button>
-                    <button>Comprar algo entre 1 a 3 anos (dar entrada num imóvel, festa de casamento)</button>
-                    <button>Guarda por bastante tempo (aposentadoria e reservas)</button>
+                    <button onClick={ModalAcrecent}>Exelente oportunidade de ganhar mais dinheiro</button>
+                    <button onClick={ModalAcrecent}>Comprar algo entre 1 a 3 anos (dar entrada num imóvel, festa de casamento)</button>
+                    <button onClick={ModalAcrecent}>Guarda por bastante tempo (aposentadoria e reservas)</button>
                 </div>
-
             </Container>
-
-            <Container>
+            )
+        }
+        if(modal === 6){
+            return(
+                <Container>
                 <div className="Titulo">
                     <h2>Pergunta final</h2>
                 </div>
@@ -103,7 +121,7 @@ function Pg() {
                 <h1>Com base no seu perfil de investidor...</h1>
 
                 <p>
-                    Encontramos ações uqe custam menos de R$100 e podem começar a multiplicar seu dinheiro já no primeiro mês.
+                    Encontramos ações que custam menos de R$100 e podem começar a multiplicar seu dinheiro já no primeiro mês.
                 </p>
 
                 <div className="ContainerButton">
@@ -111,6 +129,18 @@ function Pg() {
 
                 </div>
             </Container>
+            )
+        }
+        return null;
+    }
+    function ModalAcrecent(){
+        setTimeout(() =>{
+            setModal(modal + 1)
+        }, 200)
+    }
+    return (
+        <>
+            {pagina1()}
         </>
     )
 }

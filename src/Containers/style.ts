@@ -39,7 +39,6 @@ export const Container = styled.div`
 
 
     .ContainerButton{
-        
         text-align:center;
         justify-content:center;
         align-items:center;
