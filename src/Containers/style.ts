@@ -8,18 +8,23 @@ export const Container = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    margin-bottom:50px;
     .Titulo{
         display:flex;
         font-weight:normal;
         width:100%;
         text-align:center;
         justify-content:center;
-       
+    }
+
+    .TituloSobre{
+        margin-top:20px;
     }
 
     h1{
-        font-weight:bold;
-        margin-top:15px;
+        font-weight:bold; 
+        margin-top:20px;
+        margin-bottom:20px;
         text-align:center;
         align-items:center;
     }
@@ -30,15 +35,14 @@ export const Container = styled.div`
         align-items:center;
         display:flex;
         width:85%; 
-        margin-top:15px;
     }
 
 
     .ContainerButton{
+        
         text-align:center;
         justify-content:center;
         align-items:center;
-        margin-top:20px;
         button{
             background-color:#21387a;
             margin-top:20px;
