@@ -1,13 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import Fundo from '../public/Fundos.png'
 const GlobalStyle = createGlobalStyle`
-    @media screen and (max-width:768px) {
         *{
             padding:0;
             margin:0;
             box-sizing:border-box;
             
         }
+    @media screen and (max-width:768px) {
         body{
             background-color:#000000;
             color:white;
@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            overflow-y:hidden;
         }
     }
 `

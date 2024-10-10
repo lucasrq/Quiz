@@ -104,7 +104,7 @@ function Pg() {
                 </p>
 
                 <div className="ContainerButton">
-                    <button onClick={ModalAcrecent}>Exelente oportunidade de ganhar mais dinheiro</button>
+                    <button onClick={ModalAcrecent}>Excelente oportunidade de ganhar mais dinheiro</button>
                     <button onClick={ModalAcrecent}>Comprar algo entre 1 a 3 anos (dar entrada num imóvel, festa de casamento)</button>
                     <button onClick={ModalAcrecent}>Guarda por bastante tempo (aposentadoria e reservas)</button>
                 </div>
