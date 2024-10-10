@@ -20,7 +20,7 @@ export const Container = styled.div`
     font-weight: bold;
     text-align: center;
     align-items: center;
-    margin-bottom:40px;
+    margin-bottom:20px;
     width:95%;
   }
 
@@ -30,7 +30,7 @@ export const Container = styled.div`
     align-items: center;
     display: flex;
     width: 85%;
-    margin-bottom:40px;
+    
   }
 
   .ContainerButton {
