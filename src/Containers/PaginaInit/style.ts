@@ -45,5 +45,10 @@ export const Container = styled.div`
   .SuitManDiv{
     margin:0 auto;
     display:flex;
+    margin-top:9px;
+    img{
+        width:100%;
+
+    }
   }
   `
