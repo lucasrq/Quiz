@@ -19,5 +19,16 @@ const GlobalStyle = createGlobalStyle`
             overflow-y:hidden;
         }
     }
+
+    body{
+        background-color:#000000;
+            color:white;
+            background-image: url(${Fundo});
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-y:hidden;
+    }
 `
 export default GlobalStyle
