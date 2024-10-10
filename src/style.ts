@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
             padding:0;
             margin:0;
             box-sizing:border-box;
-            
+            font-family: "Poppins", sans-serif;
         }
     @media screen and (max-width:768px) {
         body{

@@ -6,22 +6,23 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-
   .Titulo {
     display: flex;
-    font-weight: normal;
     width: 100%;
     text-align: center;
     justify-content: center;
-    margin:65px 20px;
+    margin:35px 20px;
+    font-style: italic;
+    font-weight:100;
+    
   }
   h1 {
     font-weight: bold;
     text-align: center;
     align-items: center;
-    margin-bottom:20px;
+    margin-bottom:14px;
     width:95%;
+    font-size:27px;
   }
 
   p {
@@ -42,13 +43,24 @@ export const Container = styled.div`
       background-color: #21387a;
       margin-top: 20px;
       color: white;
-      font-size: 20px;
+      font-size: 19px;
       text-decoration: none;
-      width: 85%;
-      padding: 20px;
+      width: 100%;
+      max-width:340px;
+      padding: 15px;
       border-radius: 15px;
       border: none;
       cursor: pointer;
+    }
+  }
+
+  .investDiv{
+      margin:0 auto;
+      padding-bottom:30px;
+
+    img{
+      width:100%;
+      max-width:200px;
     }
   }
 

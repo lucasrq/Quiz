@@ -1,4 +1,4 @@
-import Pg from "./Containers/pagina"
+import Pg from "./Containers/PagQuiz/pagina"
 
 function App() {
   return (
