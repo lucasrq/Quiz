@@ -50,7 +50,12 @@ export const Container = styled.div`
       padding: 15px;
       border-radius: 15px;
       border: none;
-      cursor: pointer;
+      cursor: pointer; 
+
+      a{
+        text-decoration:none;
+        color:#fff;
+      }
     }
   }
 

@@ -142,8 +142,9 @@ function Pg() {
                     </p>
 
                     <div className="ContainerButton">
-                        <button>Quero saber mais</button>
-
+                        <button>
+                            <a href="https://pagina-de-vendas-bulr.vercel.app">Quero saber mais</a>
+                            </button>
                     </div>
                 </Container>
             )
