@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Fundo from '../public/Fundos.png'
+import Fundo from '../public/Fundo.png'
 const GlobalStyle = createGlobalStyle`
         *{
             padding:0;

@@ -40,7 +40,7 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background-color: #21387a;
+      background-color: #0d4a2d;
       margin-top: 20px;
       color: white;
       font-size: 19px;
@@ -107,7 +107,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     button {
-      background-color: #21387a;
+      background-color: #0d4a2d;
       margin-top: 20px;
       color: white;
       font-size: 19px;
